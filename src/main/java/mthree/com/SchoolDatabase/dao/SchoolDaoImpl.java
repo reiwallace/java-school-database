@@ -55,7 +55,7 @@ public class SchoolDaoImpl implements SchoolDao {
          String sql =
                  "SELECT courseCode, courseDesc " +
                  "FROM course " +
-                 "WHERE courseCode LIKE 'CS%';";
+                 "WHERE courseCode LIKE 'CS%'; ";
 
         // YOUR CODE ENDS HERE
         return jdbcTemplate.query(sql, new CourseMapper());
